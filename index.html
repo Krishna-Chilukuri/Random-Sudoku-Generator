@@ -4,120 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku</title>
+    <link rel="stylesheet" href="./styles/headerStyle.css">
     <link rel="stylesheet" href="./styles/bodyCommon.css">
     <link rel="stylesheet" href="./styles/game.css">
+    <link rel="stylesheet" href="./styles/footerStyles.css">
 </head>
 <body>
-    <div class="emptySpace"></div>
-    <div class="totalContainer">
-        <div class="gameContainer">
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell00" onclick="cellClicked(0,0)">&nbsp;</div>
-                <!-- <div class="sudokuItem" id="cell00" onclick="cellClicked(0,0)"><input type="text"></div> -->
-                <!-- <input type="text" class="sudokuItemInput" id="cell00" value>&nbsp; -->
-                <div class="sudokuItem" id="cell01" onclick="cellClicked(0,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell02" onclick="cellClicked(0,2)">&nbsp;</div>
-                <div class="sudokuItem" id="cell10" onclick="cellClicked(1,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell11" onclick="cellClicked(1,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell12" onclick="cellClicked(1,2)">&nbsp;</div>
-                <div class="sudokuItem" id="cell20" onclick="cellClicked(2,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell21" onclick="cellClicked(2,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell22" onclick="cellClicked(2,2)">&nbsp;</div>
+    <header>
+        <nav>
+            <!-- <div class="logoLeft"><img src="../resources/kp_icon.png"></div> -->
+            <div class="left">Krishna Prudhvi Chilukuri</div>
+            <div class="right">
+                <ul>
+                    <li><a href="https://krishna-chilukuri.github.io/" target="_blank">Portfolio</a></li>
+                    <li><a href="https://www.linkedin.com/in/krishna-prudhvi-chilukuri/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li><a href="https://github.com/Krishna-Chilukuri" target="_blank">GitHub</a></li>
+                    <!-- <li><a href="https://leetcode.com/Krishna_Chilukuri/" target="_blank">LeetCode</a></li> -->
+                    <!-- <li><a href="D:\Coding\KPs Portfolio\Code\pages\connect.html">Contact Form</a></li> -->
+                </ul>
             </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell03" onclick="cellClicked(0,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell04" onclick="cellClicked(0,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell05" onclick="cellClicked(0,5)">&nbsp;</div>
-                <div class="sudokuItem" id="cell13" onclick="cellClicked(1,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell14" onclick="cellClicked(1,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell15" onclick="cellClicked(1,5)">&nbsp;</div>
-                <div class="sudokuItem" id="cell23" onclick="cellClicked(2,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell24" onclick="cellClicked(2,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell25" onclick="cellClicked(2,5)">&nbsp;</div>
+        </nav>
+    </header>
+    <main>
+        <div class="projectTitle">
+            <h1>Random Sudoku Generator</h1>
+        </div>
+        <div class="totalContainer">
+            <div class="gameContainer">
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell00" onclick="cellClicked(0,0)">&nbsp;</div>
+                    <!-- <div class="sudokuItem" id="cell00" onclick="cellClicked(0,0)"><input type="text"></div> -->
+                    <!-- <input type="text" class="sudokuItemInput" id="cell00" value>&nbsp; -->
+                    <div class="sudokuItem" id="cell01" onclick="cellClicked(0,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell02" onclick="cellClicked(0,2)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell10" onclick="cellClicked(1,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell11" onclick="cellClicked(1,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell12" onclick="cellClicked(1,2)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell20" onclick="cellClicked(2,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell21" onclick="cellClicked(2,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell22" onclick="cellClicked(2,2)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell03" onclick="cellClicked(0,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell04" onclick="cellClicked(0,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell05" onclick="cellClicked(0,5)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell13" onclick="cellClicked(1,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell14" onclick="cellClicked(1,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell15" onclick="cellClicked(1,5)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell23" onclick="cellClicked(2,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell24" onclick="cellClicked(2,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell25" onclick="cellClicked(2,5)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell06" onclick="cellClicked(0,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell07" onclick="cellClicked(0,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell08" onclick="cellClicked(0,8)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell16" onclick="cellClicked(1,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell17" onclick="cellClicked(1,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell18" onclick="cellClicked(1,8)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell26" onclick="cellClicked(2,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell27" onclick="cellClicked(2,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell28" onclick="cellClicked(2,8)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell30" onclick="cellClicked(3,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell31" onclick="cellClicked(3,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell32" onclick="cellClicked(3,2)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell40" onclick="cellClicked(4,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell41" onclick="cellClicked(4,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell42" onclick="cellClicked(4,2)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell50" onclick="cellClicked(5,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell51" onclick="cellClicked(5,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell52" onclick="cellClicked(5,2)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell33" onclick="cellClicked(3,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell34" onclick="cellClicked(3,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell35" onclick="cellClicked(3,5)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell43" onclick="cellClicked(4,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell44" onclick="cellClicked(4,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell45" onclick="cellClicked(4,5)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell53" onclick="cellClicked(5,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell54" onclick="cellClicked(5,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell55" onclick="cellClicked(5,5)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell36" onclick="cellClicked(3,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell37" onclick="cellClicked(3,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell38" onclick="cellClicked(3,8)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell46" onclick="cellClicked(4,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell47" onclick="cellClicked(4,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell48" onclick="cellClicked(4,8)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell56" onclick="cellClicked(5,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell57" onclick="cellClicked(5,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell58" onclick="cellClicked(5,8)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell60" onclick="cellClicked(6,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell61" onclick="cellClicked(6,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell62" onclick="cellClicked(6,2)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell70" onclick="cellClicked(7,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell71" onclick="cellClicked(7,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell72" onclick="cellClicked(7,2)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell80" onclick="cellClicked(8,0)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell81" onclick="cellClicked(8,1)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell82" onclick="cellClicked(8,2)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell63" onclick="cellClicked(6,3)">&nbsp;</p></div>
+                    <div class="sudokuItem" id="cell64" onclick="cellClicked(6,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell65" onclick="cellClicked(6,5)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell73" onclick="cellClicked(7,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell74" onclick="cellClicked(7,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell75" onclick="cellClicked(7,5)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell83" onclick="cellClicked(8,3)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell84" onclick="cellClicked(8,4)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell85" onclick="cellClicked(8,5)">&nbsp;</div>
+                </div>
+                <div class="sudokuCell">
+                    <div class="sudokuItem" id="cell66" onclick="cellClicked(6,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell67" onclick="cellClicked(6,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell68" onclick="cellClicked(6,8)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell76" onclick="cellClicked(7,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell77" onclick="cellClicked(7,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell78" onclick="cellClicked(7,8)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell86" onclick="cellClicked(8,6)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell87" onclick="cellClicked(8,7)">&nbsp;</div>
+                    <div class="sudokuItem" id="cell88" onclick="cellClicked(8,8)">&nbsp;</div>
+                </div>
             </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell06" onclick="cellClicked(0,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell07" onclick="cellClicked(0,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell08" onclick="cellClicked(0,8)">&nbsp;</div>
-                <div class="sudokuItem" id="cell16" onclick="cellClicked(1,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell17" onclick="cellClicked(1,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell18" onclick="cellClicked(1,8)">&nbsp;</div>
-                <div class="sudokuItem" id="cell26" onclick="cellClicked(2,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell27" onclick="cellClicked(2,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell28" onclick="cellClicked(2,8)">&nbsp;</div>
-            </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell30" onclick="cellClicked(3,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell31" onclick="cellClicked(3,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell32" onclick="cellClicked(3,2)">&nbsp;</div>
-                <div class="sudokuItem" id="cell40" onclick="cellClicked(4,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell41" onclick="cellClicked(4,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell42" onclick="cellClicked(4,2)">&nbsp;</div>
-                <div class="sudokuItem" id="cell50" onclick="cellClicked(5,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell51" onclick="cellClicked(5,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell52" onclick="cellClicked(5,2)">&nbsp;</div>
-            </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell33" onclick="cellClicked(3,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell34" onclick="cellClicked(3,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell35" onclick="cellClicked(3,5)">&nbsp;</div>
-                <div class="sudokuItem" id="cell43" onclick="cellClicked(4,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell44" onclick="cellClicked(4,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell45" onclick="cellClicked(4,5)">&nbsp;</div>
-                <div class="sudokuItem" id="cell53" onclick="cellClicked(5,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell54" onclick="cellClicked(5,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell55" onclick="cellClicked(5,5)">&nbsp;</div>
-            </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell36" onclick="cellClicked(3,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell37" onclick="cellClicked(3,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell38" onclick="cellClicked(3,8)">&nbsp;</div>
-                <div class="sudokuItem" id="cell46" onclick="cellClicked(4,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell47" onclick="cellClicked(4,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell48" onclick="cellClicked(4,8)">&nbsp;</div>
-                <div class="sudokuItem" id="cell56" onclick="cellClicked(5,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell57" onclick="cellClicked(5,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell58" onclick="cellClicked(5,8)">&nbsp;</div>
-            </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell60" onclick="cellClicked(6,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell61" onclick="cellClicked(6,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell62" onclick="cellClicked(6,2)">&nbsp;</div>
-                <div class="sudokuItem" id="cell70" onclick="cellClicked(7,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell71" onclick="cellClicked(7,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell72" onclick="cellClicked(7,2)">&nbsp;</div>
-                <div class="sudokuItem" id="cell80" onclick="cellClicked(8,0)">&nbsp;</div>
-                <div class="sudokuItem" id="cell81" onclick="cellClicked(8,1)">&nbsp;</div>
-                <div class="sudokuItem" id="cell82" onclick="cellClicked(8,2)">&nbsp;</div>
-            </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell63" onclick="cellClicked(6,3)">&nbsp;</p></div>
-                <div class="sudokuItem" id="cell64" onclick="cellClicked(6,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell65" onclick="cellClicked(6,5)">&nbsp;</div>
-                <div class="sudokuItem" id="cell73" onclick="cellClicked(7,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell74" onclick="cellClicked(7,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell75" onclick="cellClicked(7,5)">&nbsp;</div>
-                <div class="sudokuItem" id="cell83" onclick="cellClicked(8,3)">&nbsp;</div>
-                <div class="sudokuItem" id="cell84" onclick="cellClicked(8,4)">&nbsp;</div>
-                <div class="sudokuItem" id="cell85" onclick="cellClicked(8,5)">&nbsp;</div>
-            </div>
-            <div class="sudokuCell">
-                <div class="sudokuItem" id="cell66" onclick="cellClicked(6,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell67" onclick="cellClicked(6,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell68" onclick="cellClicked(6,8)">&nbsp;</div>
-                <div class="sudokuItem" id="cell76" onclick="cellClicked(7,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell77" onclick="cellClicked(7,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell78" onclick="cellClicked(7,8)">&nbsp;</div>
-                <div class="sudokuItem" id="cell86" onclick="cellClicked(8,6)">&nbsp;</div>
-                <div class="sudokuItem" id="cell87" onclick="cellClicked(8,7)">&nbsp;</div>
-                <div class="sudokuItem" id="cell88" onclick="cellClicked(8,8)">&nbsp;</div>
+            <div class="buttonSec">
+                <button onclick="generateSudoku()">Generate Random Sudoku</button>
+                <button onclick="sudokuSolver()">Solve Sudoku</button>
             </div>
         </div>
-        <div class="buttonSec">
-            <button onclick="generateSudoku()">Generate Random Sudoku</button>
-            <button onclick="sudokuSolver()">Solve Sudoku</button>
+    </main>
+    <footer>
+        <div class="fourthSection">
+            <div class="contactDetails">
+                <div class="footergrid">
+                    <div class="footerContentHeading">Contact Info</div>
+                    <work-item>Mail ID</work-item>
+                    <work-item>&nbsp; : &nbsp;</work-item>
+                    <work-item> krishna.chilukuri@yahoo.com</work-item>
+                    <work-item>Phone Number</work-item>
+                    <work-item>&nbsp; : &nbsp;</work-item>
+                    <work-item> +1 (571) 470-3556</work-item>
+                    <work-item>WhatsApp Number</work-item>
+                    <work-item>&nbsp; : &nbsp;</work-item>
+                    <work-item> +91 7382470754</work-item>
+                </div>
+                <!-- <table>
+                    <caption><b>Contact Info</b></caption>
+                    <tr>
+                        <td>Mail ID</td>
+                        <td>: krishna.chilukuri@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>: +1 (571) 470-3556</td>
+                    </tr>
+                    <tr>
+                        <td>WhatsApp Number</td>
+                        <td>: +91 7382470754</td>
+                    </tr>
+                </table> -->
+                <!-- <ul>
+                    <li>Mail ID<span id="spaces">&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;</span>: krishna.chilukuri@yahoo.com</li>
+                    <li>Phone Number<span id="spaces">&emsp;&ensp;&nbsp;&nbsp;&nbsp;</span>: +1 (571) 470-3556</li>
+                    <li>WhatsApp Number&nbsp;: +91 7382470754</li>
+                </ul> -->
+            <!-- </div>
+            <div class="credits">
+                <div class="footergrid">
+                    <div class="footerContentHeading">Credits</div>
+                    <work-item>Typed Text</work-item>
+                    <work-item>&nbsp; : &nbsp;</work-item>
+                    <work-item><a 
+                        href="https://github.com/mattboldt/typed.js/" target="_blank" rel="noopener noreferrer">https://github.com/mattboldt/typed.js/</a></work-item>
+                    <work-item>Image</work-item>
+                    <work-item>&nbsp; : &nbsp;</work-item>
+                    <work-item><a
+                        href="https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943" target="_blank" rel="noopener noreferrer">https://www.cleanpng.com/</a></work-item>
+                </div> -->
+                <!-- <table>
+                    <caption><b>Credits</b></caption>
+                    <tr>
+                        <td>Typed Text</td>
+                        <td>: <a 
+                            href="https://github.com/mattboldt/typed.js/" target="_blank" rel="noopener noreferrer">https://github.com/mattboldt/typed.js/</a></td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td>: <a
+                            href="https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943" target="_blank" rel="noopener noreferrer">https://www.cleanpng.com/</a></td>
+                    </tr>
+                </table> -->
+                <!-- <ul>
+                    <li><b>Credits:</b></li>
+                    <li>Typed Text&nbsp;: <a
+                            href="https://github.com/mattboldt/typed.js/" target="_blank" rel="noopener noreferrer">https://github.com/mattboldt/typed.js/</a>
+                    </li>
+                    <li>Image<span id="spaces">&emsp;&emsp;&nbsp;&nbsp;</span>: <a
+                            href="https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943" target="_blank" rel="noopener noreferrer">https://www.cleanpng.com/png-programmer-computer-programming-laptop-professiona-1315943/</a>
+                    </li>
+                    <li>Icons&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a
+                            href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">https://www.flaticon.com/</a>
+                    </li>
+                </ul> -->
+            </div>
         </div>
-    </div>
+    </footer>
     <script src="./logic/variablesForSudoku.js"></script>
     <script src="./logic/checkerFunctions.js"></script>
     <script src="./logic/sudokuSolver.js"></script>

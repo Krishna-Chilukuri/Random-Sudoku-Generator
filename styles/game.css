@@ -1,7 +1,11 @@
-.emptySpace{
-    /* width:10vw; */
-    height: 20vh;;
+.projectTitle{
+    margin: 0vw 1vw;
+    padding: 1vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .gameContainer{
     /* margin: 7vw 7vh; */
@@ -9,7 +13,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     width: 45vw;
-    height: 50vh;
+    height: 54vh;
     margin: auto;
     /* justify-items: center; */
     /* justify-content: stretch; */
@@ -17,8 +21,8 @@
     align-items: center;
 }
 
-.totalContainer{
-    background-color: blue;
+.totalContainer {
+    /* background-color: blue; */
     width: 60vw;
     height: 75vh;
     margin: auto;
@@ -26,6 +30,16 @@
     grid-template-columns: auto;
     justify-content: space-around;
 }
+
+/* .totalContainer{
+    background-color: blue;
+    width: 60vw;
+    height: 75vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+} */
 
 
 
@@ -71,7 +85,7 @@
 }
 
 .buttonSec{
-    background-color: aqua;
+    /* background-color: aqua; */
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
