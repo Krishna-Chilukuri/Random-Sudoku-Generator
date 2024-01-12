@@ -1,17 +1,17 @@
 @media screen and (max-width: 1000px){
     .projectTitle{
-        background-color: aqua;
+        /* background-color: aqua; */
         padding: 0vw;
         margin: 2vw 1vw;
     }
 
 
-    .totalContainer{
+    /* .totalContainer{
         background-color: red;
-    }
+    } */
 
     .gameContainer{
-        background-color: purple;
+        /* background-color: purple; */
         width: 58vw;
         height: 36vh;
     }
