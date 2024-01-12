@@ -26,10 +26,21 @@ function checkInBox(row, col, num) {
     for (let index1 = 0; index1 < gridRoot; index1++) {
         for (let index2 = 0; index2 < gridRoot; index2++) {
             if (sudokuGrid[row + index1][col + index2] == num) {
-                // console.log("FALSE FROM BOX CHECK");
+                // console.log("FALSE FROM B    OX CHECK");
                 return false;
             }            
         }
     }
     return true;
+}
+
+function checkForEmptyCells() {
+    for (let row = 0; row < gridSize; row++) {
+        for (let col = 0; col < gridSize; col++) {
+            if (sudokuGrid[row][col] == 0) {
+                return true;
+            }
+        }    
+    }
+    return false;
 }

@@ -8,6 +8,11 @@ function cellClicked(row, col) {
     if (x >0 && x < 10 && checkGrid(row, col, x)) {
         sudokuGrid[row][col] = x;
         document.getElementById(cellID).innerHTML = x;
+        isEmpty = false;
+        if (!checkForEmptyCells()) {
+            console.log("Sudoku is Filled");
+            resultPara.textContent = "Sudoku is Full";
+        }
     }
 }
 
@@ -30,6 +35,7 @@ function fillInScreen(){
 
 function generateSudoku(){
     if (randomGen == true) {
+        isEmpty = false;
         generateDiagonalElements();
         for (let index = 0; index < sudokuGrid.length; index++) {
             const element = sudokuGrid[index];

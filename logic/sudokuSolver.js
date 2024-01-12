@@ -23,7 +23,8 @@ function solveSudoku(row, col) {
 }
 
 function sudokuSolver() {
-    solveSudoku(0, 0);
+    if (isEmpty == false) {
+        solveSudoku(0, 0);
     console.log("=======================");
     for (let index = 0; index < sudokuGrid.length; index++) {
         const row = sudokuGrid[index];
@@ -31,6 +32,7 @@ function sudokuSolver() {
     }
     console.log("=======================");
     fillInScreen();
+    }
 }
 
 
