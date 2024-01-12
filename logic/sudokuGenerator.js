@@ -34,6 +34,19 @@ function fillInScreen(){
 }
 
 function generateSudoku(){
+    let choice = selectDiff.options[selectDiff.selectedIndex].value;
+    console.log(choice, typeof(choice));
+    switch (choice) {
+        case "easy":
+            removalCount = 30;            
+            break;
+        case "medi":
+            removalCount = 45;
+            break;
+        case "hard":
+            removalCount = 60;
+            break;
+    }
     if (randomGen == true) {
         isEmpty = false;
         generateDiagonalElements();

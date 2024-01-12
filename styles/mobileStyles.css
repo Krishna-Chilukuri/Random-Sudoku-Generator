@@ -1,0 +1,25 @@
+@media screen and (max-width: 1000px){
+    .projectTitle{
+        background-color: aqua;
+        padding: 0vw;
+        margin: 2vw 1vw;
+    }
+
+
+    .totalContainer{
+        background-color: red;
+    }
+
+    .gameContainer{
+        background-color: purple;
+        width: 58vw;
+        height: 36vh;
+    }
+
+    .buttonSec{
+        grid-template-columns: auto;
+    }
+    .buttonSec button{
+        padding: 1rem 1rem;
+    }
+}
