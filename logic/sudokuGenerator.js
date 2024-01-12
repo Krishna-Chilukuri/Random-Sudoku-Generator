@@ -1,19 +1,41 @@
 function cellClicked(row, col) {
-    randomGen = false;
     let x = parseInt(prompt("Enter a value (1 - 9): "));
     console.log("Cell"+ row + col + "clicked");
     let cellID = "cell"+row+col;
     console.log("cell ID: ",cellID);
 
-    if (x >0 && x < 10 && checkGrid(row, col, x)) {
-        sudokuGrid[row][col] = x;
-        document.getElementById(cellID).innerHTML = x;
-        isEmpty = false;
-        if (!checkForEmptyCells()) {
-            console.log("Sudoku is Filled");
-            resultPara.textContent = "Sudoku is Full";
+    if (x >0 && x < 10) {
+        if (checkGrid(row, col, x)) {
+            sudokuGrid[row][col] = x;
+            document.getElementById(cellID).innerHTML = x;
+            isEmpty = false;
+            if (!checkForEmptyCells()) {
+                console.log("Sudoku is Filled");
+                resultPara.textContent = "Sudoku is Full";
+            }
+        }
+        else {
+            wrongChoices--;
+            if (wrongChoices == -1) {
+                endGame();
+                resultPara.textContent = "Game Ended, Reload to Play Again";
+            }
+            else {
+                resultPara.textContent = "Wrong Attempts Left: " + wrongChoices;
+            }
+        }
+        randomGen = false;
+    }
+}
+
+function endGame() {
+    for (let index1 = 0; index1 < gridSize; index1++) {
+        for (let index2 = 0; index2 < gridSize; index2++) {
+            let currCell = "cell"+index1+index2;
+            document.getElementById(currCell).onclick = emptyFunc();
         }
     }
+
 }
 
 function emptyFunc() {
@@ -67,7 +89,8 @@ function generateSudoku(){
             console.log(element);
         }
 
-        fillInScreen();   
+        fillInScreen();
+        resultPara.textContent = "Wrong Attempts Left: " + wrongChoices;
     }
 }
 
